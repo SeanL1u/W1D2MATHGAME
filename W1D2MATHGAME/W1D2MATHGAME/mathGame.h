@@ -4,8 +4,6 @@
 @property NSInteger score;
 @property NSString* currentQuestion;
 @property NSArray <NSArray*>* questionArray;
-@property NSString* instruction;
-
 +(void)start;
 -(NSArray*)questionGenerator;
 

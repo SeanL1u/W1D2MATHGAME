@@ -3,11 +3,7 @@
 NSString* getandConvert(){
     char inputstr[4];
     scanf("%s", inputstr);
-    //NSLog(@"%s",inputstr);
-    //while (strcmp(inputstr, "\n") == 0){fgets (inputstr,255,stdin);}
-    NSString* whatever = [NSString stringWithUTF8String:inputstr];
-    //NSLog(@"%@", whatever);
-    return whatever;}
+    NSString* whatever = [NSString stringWithUTF8String:inputstr]; return whatever;}
 
 NSInteger numberize(NSString* whatever){
     NSInteger outputnum = [whatever integerValue];
@@ -35,14 +31,8 @@ NSInteger numberize(NSString* whatever){
         NSString* num2S = questionGenerated [1];
         NSInteger sum = numberize(questionGenerated [2]);
         NSLog( (@"%@ + %@ = ?") ,(num1S), num2S);
-        
-        
         NSString* inputanwserS = getandConvert();
         NSInteger inputanwser = numberize(inputanwserS);
-        
-        
-        //NSLog(@"%ldnumin",(long)numInputanwser);
-        //NSLog(@"%ldnuman",(long)numAnwser);
 
     if (inputanwser == sum){
         Player1.score += 1;
@@ -51,8 +41,5 @@ NSInteger numberize(NSString* whatever){
         
     NSLog(@"YOUR SCORE IS %ld",(long)Player1.score);}}
 
-
-
-
-    @end
+@end
 
