@@ -1,10 +1,5 @@
 #import "mathGame.h"
 
-NSString* getandConvert(){
-    char inputstr[4];
-    scanf("%s", inputstr);
-    NSString* whatever = [NSString stringWithUTF8String:inputstr]; return whatever;}
-
 NSInteger numberize(NSString* whatever){
     NSInteger outputnum = [whatever integerValue];
     return outputnum;}
@@ -23,23 +18,34 @@ NSInteger numberize(NSString* whatever){
     NSLog(@"Anwser : %@", sumS);
     return @[num1S,num2S,sumS];}
 
-+(void)start{ mathGame* Player1 = [[mathGame alloc] init];
-    Player1.score = 0;
-    while (YES){
-        NSArray* questionGenerated = [Player1 questionGenerator ];
+-(NSString*) getandConvert{
+    char inputstr[4];
+    scanf("%s", inputstr);
+     if(strcmp(inputstr,"quit\n") != (0)){ self.game = NO;}
+    NSString* whatever = [NSString stringWithUTF8String:inputstr]; return whatever;}
+-(void)storyloop{
+    while (self.game){
+        NSArray* questionGenerated = [self questionGenerator ];
         NSString* num1S = questionGenerated [0];
         NSString* num2S = questionGenerated [1];
         NSInteger sum = numberize(questionGenerated [2]);
         NSLog( (@"%@ + %@ = ?") ,(num1S), num2S);
-        NSString* inputanwserS = getandConvert();
+        NSString* inputanwserS = (self.getandConvert);
         NSInteger inputanwser = numberize(inputanwserS);
-
-    if (inputanwser == sum){
-        Player1.score += 1;
-        NSLog(@"CORRECT!\n");}
-    else {NSLog(@"Wrong :(\n");}
+        //NSLog(@"%hhd",self.game);
         
-    NSLog(@"YOUR SCORE IS %ld",(long)Player1.score);}}
+        if (inputanwser == sum){
+            self.score += 1;
+            NSLog(@"CORRECT!\n");}
+        else {NSLog(@"Wrong :(\n");}
+        NSLog(@"YOUR SCORE IS %ld",(long)self.score);}}
+
++(void)start{ mathGame* Player1 = [[mathGame alloc] init];
+    Player1.score = 0;
+    Player1.game = YES;
+    [Player1 storyloop];
+}
+
 
 @end
 
