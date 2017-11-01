@@ -1,8 +1,12 @@
 #import <Foundation/Foundation.h>
-#import "mathGame.h"
+#import "MathGame.h"
 
 int main(int argc, const char * argv[]) {
     
-    @autoreleasepool {[mathGame start];}
+    @autoreleasepool
+    {
+        [MathGame start];
+        
+    }
     //forgot to follow the instruction, i have to go sleep now
     return 0;}

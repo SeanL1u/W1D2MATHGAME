@@ -1,12 +1,12 @@
 #import <Foundation/Foundation.h>
 
-@interface mathGame : NSObject
-@property NSInteger score;
+@interface MathGame : NSObject
+@property (nonatomic, assign) NSInteger score;
 @property NSString* currentQuestion;
 @property NSArray <NSArray*>* questionArray;
 @property BOOL game;
-@property NSDate* start_time;
-@property NSDate* end_time;
+@property (nonatomic, strong) NSDate* start_time;
+@property (nonatomic) NSDate* end_time;
 +(void)start;
 -(NSArray*)questionGenerator;
 -(void)storyloop;

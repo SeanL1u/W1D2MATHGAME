@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B103EF171FA8E19900844992 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B103EF161FA8E19900844992 /* main.m */; };
-		B103EF1F1FA8E48500844992 /* mathGame.m in Sources */ = {isa = PBXBuildFile; fileRef = B103EF1E1FA8E48500844992 /* mathGame.m */; };
+		B103EF1F1FA8E48500844992 /* MathGame.m in Sources */ = {isa = PBXBuildFile; fileRef = B103EF1E1FA8E48500844992 /* MathGame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,8 +26,8 @@
 /* Begin PBXFileReference section */
 		B103EF131FA8E19900844992 /* W1D2MATHGAME */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = W1D2MATHGAME; sourceTree = BUILT_PRODUCTS_DIR; };
 		B103EF161FA8E19900844992 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B103EF1D1FA8E48500844992 /* mathGame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mathGame.h; sourceTree = "<group>"; };
-		B103EF1E1FA8E48500844992 /* mathGame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mathGame.m; sourceTree = "<group>"; };
+		B103EF1D1FA8E48500844992 /* MathGame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MathGame.h; sourceTree = "<group>"; };
+		B103EF1E1FA8E48500844992 /* MathGame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MathGame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				B103EF161FA8E19900844992 /* main.m */,
-				B103EF1D1FA8E48500844992 /* mathGame.h */,
-				B103EF1E1FA8E48500844992 /* mathGame.m */,
+				B103EF1D1FA8E48500844992 /* MathGame.h */,
+				B103EF1E1FA8E48500844992 /* MathGame.m */,
 			);
 			path = W1D2MATHGAME;
 			sourceTree = "<group>";
@@ -125,7 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B103EF171FA8E19900844992 /* main.m in Sources */,
-				B103EF1F1FA8E48500844992 /* mathGame.m in Sources */,
+				B103EF1F1FA8E48500844992 /* MathGame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
