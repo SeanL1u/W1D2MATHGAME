@@ -7,5 +7,7 @@
 @property NSString* instruction;
 
 +(void)start;
+-(NSArray*)questionGenerator;
+
 
 @end
